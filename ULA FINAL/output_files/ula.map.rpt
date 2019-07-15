@@ -1,0 +1,1023 @@
+Analysis & Synthesis report for ula
+Thu Jun 28 16:33:15 2018
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: MUX:inst1
+ 11. Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst3
+ 12. Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst2
+ 13. Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst1
+ 14. Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst
+ 15. Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst3
+ 16. Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst2
+ 17. Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst1
+ 18. Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst
+ 19. Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst3
+ 20. Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst2
+ 21. Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst1
+ 22. Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst
+ 23. Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst3
+ 24. Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst2
+ 25. Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst1
+ 26. Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst
+ 27. Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst43
+ 28. Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst42
+ 29. Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst41
+ 30. Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst17
+ 31. Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst18
+ 32. Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst19
+ 33. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst6
+ 34. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst17
+ 35. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst18
+ 36. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst19
+ 37. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst43
+ 38. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst42
+ 39. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst41
+ 40. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst21
+ 41. Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst22
+ 42. Parameter Settings for User Entity Instance: MUX:inst2
+ 43. Parameter Settings for User Entity Instance: MUX:inst3
+ 44. Parameter Settings for User Entity Instance: MUX:inst4
+ 45. Parameter Settings for User Entity Instance: MUX:inst7
+ 46. Parameter Settings for User Entity Instance: MUX:inst5
+ 47. Parameter Settings for User Entity Instance: MUX:inst6
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Jun 28 16:33:15 2018      ;
+; Quartus II 64-Bit Version       ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
+; Revision Name                   ; ula                                        ;
+; Top-level Entity Name           ; ula                                        ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 29                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; ula                ; ula                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+; adder.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/adder.bdf              ;         ;
+; ula.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/ula.bdf                ;         ;
+; C2.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/C2.bdf                 ;         ;
+; hexadecimal.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/hexadecimal.bdf        ;         ;
+; ou_exclusivo.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/ou_exclusivo.bdf       ;         ;
+; nao_ou.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/nao_ou.bdf             ;         ;
+; nao_e.bdf                        ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/nao_e.bdf              ;         ;
+; ou.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/ou.bdf                 ;         ;
+; e.bdf                            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/e.bdf                  ;         ;
+; nao.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/nao.bdf                ;         ;
+; multiplicador_C2.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/multiplicador_C2.bdf   ;         ;
+; adder_c2.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/adder_c2.bdf           ;         ;
+; adder_carry.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/adder_carry.bdf        ;         ;
+; fs.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/fs.bdf                 ;         ;
+; unidade_subtratora.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/unidade_subtratora.bdf ;         ;
+; divisor_3bits.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/divisor_3bits.bdf      ;         ;
+; divisor_C2.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/10851707/Desktop/Trabalho Final PLD/divisor_C2.bdf         ;         ;
+; mux.tdf                          ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/mux.tdf              ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.inc          ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/lpm_mux.tdf          ;         ;
+; aglobal141.inc                   ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/aglobal141.inc       ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/muxlut.inc           ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/bypassff.inc         ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/altera/14.1/quartus/libraries/megafunctions/altshift.inc         ;         ;
+; db/mux_hlc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/10851707/Desktop/Trabalho Final PLD/db/mux_hlc.tdf         ;         ;
+; rot_r.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/rot_r.bdf              ;         ;
+; rot_l.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/rot_l.bdf              ;         ;
+; shift_r.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/shift_r.bdf            ;         ;
+; db/mux_ujc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/10851707/Desktop/Trabalho Final PLD/db/mux_ujc.tdf         ;         ;
+; shift_l.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/shift_l.bdf            ;         ;
+; mult_3.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/mult_3.bdf             ;         ;
+; ha.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/ha.bdf                 ;         ;
+; fa.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/fa.bdf                 ;         ;
+; db/mux_pjc.tdf                   ; yes             ; Auto-Generated Megafunction              ; C:/Users/10851707/Desktop/Trabalho Final PLD/db/mux_pjc.tdf         ;         ;
+; sub.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/10851707/Desktop/Trabalho Final PLD/sub.bdf                ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 51          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 75          ;
+;     -- 7 input functions                    ; 5           ;
+;     -- 6 input functions                    ; 21          ;
+;     -- 5 input functions                    ; 7           ;
+;     -- 4 input functions                    ; 18          ;
+;     -- <=3 input functions                  ; 24          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 29          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[4]~input ;
+; Maximum fan-out                             ; 29          ;
+; Total fan-out                               ; 364         ;
+; Average fan-out                             ; 2.74        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Library Name ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------+--------------+
+; |ula                                 ; 75 (2)            ; 0 (0)        ; 0                 ; 0          ; 29   ; 0            ; |ula                                                                         ; work         ;
+;    |adder_c2:inst9|                  ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|adder_c2:inst9                                                          ; work         ;
+;       |fa:inst3|                     ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|adder_c2:inst9|fa:inst3                                                 ; work         ;
+;       |fa:inst4|                     ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|adder_c2:inst9|fa:inst4                                                 ; work         ;
+;    |divisor_C2:inst8|                ; 9 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8                                                        ; work         ;
+;       |divisor_3bits:inst2|          ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2                                    ; work         ;
+;          |unidade_subtratora:inst16| ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst16          ; work         ;
+;             |fs:inst2|               ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst16|fs:inst2 ; work         ;
+;          |unidade_subtratora:inst3|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst3           ; work         ;
+;          |unidade_subtratora:inst7|  ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst7           ; work         ;
+;             |fs:inst2|               ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst7|fs:inst2  ; work         ;
+;          |unidade_subtratora:inst9|  ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst9           ; work         ;
+;             |fs:inst2|               ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst9|fs:inst2  ; work         ;
+;       |mux:inst18|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst18                                             ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst18|lpm_mux:$00001                              ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst18|lpm_mux:$00001|mux_pjc:auto_generated       ; work         ;
+;       |mux:inst19|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst19                                             ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst19|lpm_mux:$00001                              ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst19|lpm_mux:$00001|mux_pjc:auto_generated       ; work         ;
+;       |mux:inst42|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst42                                             ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst42|lpm_mux:$00001                              ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst42|lpm_mux:$00001|mux_pjc:auto_generated       ; work         ;
+;       |mux:inst43|                   ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst43                                             ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst43|lpm_mux:$00001                              ; work         ;
+;             |mux_pjc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|divisor_C2:inst8|mux:inst43|lpm_mux:$00001|mux_pjc:auto_generated       ; work         ;
+;    |hexadecimal:inst12|              ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|hexadecimal:inst12                                                      ; work         ;
+;    |multiplicador_C2:inst28|         ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|multiplicador_C2:inst28                                                 ; work         ;
+;       |mult_3:inst4|                 ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|multiplicador_C2:inst28|mult_3:inst4                                    ; work         ;
+;          |fa:inst29|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|multiplicador_C2:inst28|mult_3:inst4|fa:inst29                          ; work         ;
+;          |fa:inst2|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|multiplicador_C2:inst28|mult_3:inst4|fa:inst2                           ; work         ;
+;          |ha:inst|                   ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|multiplicador_C2:inst28|mult_3:inst4|ha:inst                            ; work         ;
+;    |mux:inst1|                       ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst1                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst1|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst1|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |mux:inst2|                       ; 12 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst2                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 12 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst2|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 12 (12)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst2|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |mux:inst3|                       ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst3                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst3|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 6 (6)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst3|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |mux:inst4|                       ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst4                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst4|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst4|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |mux:inst5|                       ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst5                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst5|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst5|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |mux:inst6|                       ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst6                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst6|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst6|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |mux:inst7|                       ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst7                                                               ; work         ;
+;       |lpm_mux:$00001|               ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst7|lpm_mux:$00001                                                ; work         ;
+;          |mux_hlc:auto_generated|    ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|mux:inst7|lpm_mux:$00001|mux_hlc:auto_generated                         ; work         ;
+;    |rot_l:inst16|                    ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16                                                            ; work         ;
+;       |mux:inst1|                    ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16|mux:inst1                                                  ; work         ;
+;          |lpm_mux:$00001|            ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16|mux:inst1|lpm_mux:$00001                                   ; work         ;
+;             |mux_hlc:auto_generated| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16|mux:inst1|lpm_mux:$00001|mux_hlc:auto_generated            ; work         ;
+;       |mux:inst|                     ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16|mux:inst                                                   ; work         ;
+;          |lpm_mux:$00001|            ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16|mux:inst|lpm_mux:$00001                                    ; work         ;
+;             |mux_hlc:auto_generated| ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_l:inst16|mux:inst|lpm_mux:$00001|mux_hlc:auto_generated             ; work         ;
+;    |rot_r:inst18|                    ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18                                                            ; work         ;
+;       |mux:inst1|                    ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18|mux:inst1                                                  ; work         ;
+;          |lpm_mux:$00001|            ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18|mux:inst1|lpm_mux:$00001                                   ; work         ;
+;             |mux_hlc:auto_generated| ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18|mux:inst1|lpm_mux:$00001|mux_hlc:auto_generated            ; work         ;
+;       |mux:inst|                     ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18|mux:inst                                                   ; work         ;
+;          |lpm_mux:$00001|            ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18|mux:inst|lpm_mux:$00001                                    ; work         ;
+;             |mux_hlc:auto_generated| ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|rot_r:inst18|mux:inst|lpm_mux:$00001|mux_hlc:auto_generated             ; work         ;
+;    |shift_l:inst14|                  ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|shift_l:inst14                                                          ; work         ;
+;       |mux:inst2|                    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|shift_l:inst14|mux:inst2                                                ; work         ;
+;          |lpm_mux:$00001|            ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|shift_l:inst14|mux:inst2|lpm_mux:$00001                                 ; work         ;
+;             |mux_ujc:auto_generated| ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|shift_l:inst14|mux:inst2|lpm_mux:$00001|mux_ujc:auto_generated          ; work         ;
+;    |sub:inst17|                      ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17                                                              ; work         ;
+;       |C2:inst1|                     ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17|C2:inst1                                                     ; work         ;
+;          |adder:inst4|               ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17|C2:inst1|adder:inst4                                         ; work         ;
+;             |fa:inst5|               ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17|C2:inst1|adder:inst4|fa:inst5                                ; work         ;
+;       |adder_carry:inst|             ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17|adder_carry:inst                                             ; work         ;
+;          |fa:inst3|                  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17|adder_carry:inst|fa:inst3                                    ; work         ;
+;          |fa:inst4|                  ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ula|sub:inst17|adder_carry:inst|fa:inst4                                    ; work         ;
++--------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ula|mux:inst5|lpm_mux:$00001|mux_hlc:auto_generated|l2_w0_n2_mux_dataout ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |ula|mux:inst2|lpm_mux:$00001|mux_hlc:auto_generated|l4_w0_n0_mux_dataout ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst1 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst3 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                    ;
+; WIDTHS         ; 4     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst2 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                    ;
+; WIDTHS         ; 4     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                    ;
+; WIDTHS         ; 4     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_r:inst18|MUX:inst ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                   ;
+; WIDTHS         ; 4     ; Untyped                                   ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst3 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                    ;
+; WIDTHS         ; 4     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst2 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                    ;
+; WIDTHS         ; 4     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                    ;
+; WIDTHS         ; 4     ; Untyped                                    ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rot_l:inst16|MUX:inst ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; WIDTH          ; 16    ; Untyped                                   ;
+; WIDTHS         ; 4     ; Untyped                                   ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst3 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                      ;
+; WIDTHS         ; 3     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst2 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                      ;
+; WIDTHS         ; 3     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                      ;
+; WIDTHS         ; 3     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_r:inst15|MUX:inst ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                     ;
+; WIDTHS         ; 3     ; Untyped                                     ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst3 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                      ;
+; WIDTHS         ; 3     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst2 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                      ;
+; WIDTHS         ; 3     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                      ;
+; WIDTHS         ; 3     ; Untyped                                      ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_l:inst14|MUX:inst ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 5     ; Untyped                                     ;
+; WIDTHS         ; 3     ; Untyped                                     ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst43 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst42 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst41 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst17 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst18 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador_C2:inst28|MUX:inst19 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                                ;
+; WIDTHS         ; 1     ; Untyped                                                ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst6 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                        ;
+; WIDTHS         ; 1     ; Untyped                                        ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst17 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst18 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst19 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst43 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst42 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst41 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst21 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor_C2:inst8|MUX:inst22 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 2     ; Untyped                                         ;
+; WIDTHS         ; 1     ; Untyped                                         ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst2 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst3 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst4 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst7 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst5 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX:inst6 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; WIDTH          ; 16    ; Untyped                       ;
+; WIDTHS         ; 4     ; Untyped                       ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 77                          ;
+;     extend            ; 5                           ;
+;         7 data inputs ; 5                           ;
+;     normal            ; 72                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 21                          ;
+; boundary_port         ; 29                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 6.18                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+    Info: Processing started: Thu Jun 28 16:33:03 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ula -c ula
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file adder.bdf
+    Info (12023): Found entity 1: adder
+Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
+    Info (12023): Found entity 1: ula
+Info (12021): Found 1 design units, including 1 entities, in source file c2.bdf
+    Info (12023): Found entity 1: C2
+Info (12021): Found 1 design units, including 1 entities, in source file hexadecimal.bdf
+    Info (12023): Found entity 1: hexadecimal
+Info (12021): Found 1 design units, including 1 entities, in source file ou_exclusivo.bdf
+    Info (12023): Found entity 1: ou_exclusivo
+Info (12021): Found 1 design units, including 1 entities, in source file nao_ou.bdf
+    Info (12023): Found entity 1: nao_ou
+Info (12021): Found 1 design units, including 1 entities, in source file nao_e.bdf
+    Info (12023): Found entity 1: nao_e
+Info (12021): Found 1 design units, including 1 entities, in source file ou.bdf
+    Info (12023): Found entity 1: ou
+Info (12021): Found 1 design units, including 1 entities, in source file e.bdf
+    Info (12023): Found entity 1: e
+Info (12021): Found 1 design units, including 1 entities, in source file nao.bdf
+    Info (12023): Found entity 1: nao
+Info (12021): Found 1 design units, including 1 entities, in source file multiplicador_c2.bdf
+    Info (12023): Found entity 1: multiplicador_C2
+Info (12021): Found 1 design units, including 1 entities, in source file adder_c2.bdf
+    Info (12023): Found entity 1: adder_c2
+Info (12021): Found 1 design units, including 1 entities, in source file adder_carry.bdf
+    Info (12023): Found entity 1: adder_carry
+Info (12021): Found 1 design units, including 1 entities, in source file fs.bdf
+    Info (12023): Found entity 1: fs
+Info (12021): Found 1 design units, including 1 entities, in source file unidade_subtratora.bdf
+    Info (12023): Found entity 1: unidade_subtratora
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_3bits.bdf
+    Info (12023): Found entity 1: divisor_3bits
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_c2.bdf
+    Info (12023): Found entity 1: divisor_C2
+Info (12127): Elaborating entity "ula" for the top level hierarchy
+Warning (275011): Block or symbol "NOT" of instance "inst34" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst36" overlaps another block or symbol
+Info (12128): Elaborating entity "hexadecimal" for hierarchy "hexadecimal:inst12"
+Warning (275011): Block or symbol "NOT" of instance "inst57" overlaps another block or symbol
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:inst1"
+Info (12130): Elaborated megafunction instantiation "MUX:inst1"
+Info (12133): Instantiated megafunction "MUX:inst1" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+    Info (12134): Parameter "WIDTHS" = "4"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX:inst1|lpm_mux:$00001"
+Info (12131): Elaborated megafunction instantiation "MUX:inst1|lpm_mux:$00001", which is child of megafunction instantiation "MUX:inst1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_hlc.tdf
+    Info (12023): Found entity 1: mux_hlc
+Info (12128): Elaborating entity "mux_hlc" for hierarchy "MUX:inst1|lpm_mux:$00001|mux_hlc:auto_generated"
+Warning (12125): Using design file rot_r.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rot_r
+Info (12128): Elaborating entity "rot_r" for hierarchy "rot_r:inst18"
+Info (12128): Elaborating entity "MUX" for hierarchy "rot_r:inst18|MUX:inst3"
+Info (12130): Elaborated megafunction instantiation "rot_r:inst18|MUX:inst3"
+Info (12133): Instantiated megafunction "rot_r:inst18|MUX:inst3" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+    Info (12134): Parameter "WIDTHS" = "4"
+Warning (12125): Using design file rot_l.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rot_l
+Info (12128): Elaborating entity "rot_l" for hierarchy "rot_l:inst16"
+Warning (12125): Using design file shift_r.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shift_r
+Info (12128): Elaborating entity "shift_r" for hierarchy "shift_r:inst15"
+Info (12128): Elaborating entity "MUX" for hierarchy "shift_r:inst15|MUX:inst3"
+Info (12130): Elaborated megafunction instantiation "shift_r:inst15|MUX:inst3"
+Info (12133): Instantiated megafunction "shift_r:inst15|MUX:inst3" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+    Info (12134): Parameter "WIDTHS" = "3"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "shift_r:inst15|MUX:inst3|lpm_mux:$00001"
+Info (12131): Elaborated megafunction instantiation "shift_r:inst15|MUX:inst3|lpm_mux:$00001", which is child of megafunction instantiation "shift_r:inst15|MUX:inst3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ujc.tdf
+    Info (12023): Found entity 1: mux_ujc
+Info (12128): Elaborating entity "mux_ujc" for hierarchy "shift_r:inst15|MUX:inst3|lpm_mux:$00001|mux_ujc:auto_generated"
+Warning (12125): Using design file shift_l.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shift_l
+Info (12128): Elaborating entity "shift_l" for hierarchy "shift_l:inst14"
+Info (12128): Elaborating entity "MUX" for hierarchy "shift_l:inst14|MUX:inst3"
+Info (12130): Elaborated megafunction instantiation "shift_l:inst14|MUX:inst3"
+Info (12133): Instantiated megafunction "shift_l:inst14|MUX:inst3" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+    Info (12134): Parameter "WIDTHS" = "3"
+Info (12128): Elaborating entity "MUX" for hierarchy "shift_l:inst14|MUX:inst2"
+Info (12130): Elaborated megafunction instantiation "shift_l:inst14|MUX:inst2"
+Info (12133): Instantiated megafunction "shift_l:inst14|MUX:inst2" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+    Info (12134): Parameter "WIDTHS" = "3"
+Info (12128): Elaborating entity "MUX" for hierarchy "shift_l:inst14|MUX:inst1"
+Info (12130): Elaborated megafunction instantiation "shift_l:inst14|MUX:inst1"
+Info (12133): Instantiated megafunction "shift_l:inst14|MUX:inst1" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+    Info (12134): Parameter "WIDTHS" = "3"
+Info (12128): Elaborating entity "MUX" for hierarchy "shift_l:inst14|MUX:inst"
+Info (12130): Elaborated megafunction instantiation "shift_l:inst14|MUX:inst"
+Info (12133): Instantiated megafunction "shift_l:inst14|MUX:inst" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "5"
+    Info (12134): Parameter "WIDTHS" = "3"
+Info (12128): Elaborating entity "multiplicador_C2" for hierarchy "multiplicador_C2:inst28"
+Warning (275011): Block or symbol "NOT" of instance "inst11" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst45" overlaps another block or symbol
+Warning (12125): Using design file mult_3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mult_3
+Info (12128): Elaborating entity "mult_3" for hierarchy "multiplicador_C2:inst28|mult_3:inst4"
+Warning (12125): Using design file ha.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ha
+Info (12128): Elaborating entity "ha" for hierarchy "multiplicador_C2:inst28|mult_3:inst4|ha:inst"
+Warning (12125): Using design file fa.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fa
+Info (12128): Elaborating entity "fa" for hierarchy "multiplicador_C2:inst28|mult_3:inst4|fa:inst29"
+Info (12128): Elaborating entity "MUX" for hierarchy "multiplicador_C2:inst28|MUX:inst43"
+Info (12130): Elaborated megafunction instantiation "multiplicador_C2:inst28|MUX:inst43"
+Info (12133): Instantiated megafunction "multiplicador_C2:inst28|MUX:inst43" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "2"
+    Info (12134): Parameter "WIDTHS" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "multiplicador_C2:inst28|MUX:inst43|lpm_mux:$00001"
+Info (12131): Elaborated megafunction instantiation "multiplicador_C2:inst28|MUX:inst43|lpm_mux:$00001", which is child of megafunction instantiation "multiplicador_C2:inst28|MUX:inst43"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_pjc.tdf
+    Info (12023): Found entity 1: mux_pjc
+Info (12128): Elaborating entity "mux_pjc" for hierarchy "multiplicador_C2:inst28|MUX:inst43|lpm_mux:$00001|mux_pjc:auto_generated"
+Info (12128): Elaborating entity "adder" for hierarchy "multiplicador_C2:inst28|adder:inst1"
+Info (12128): Elaborating entity "divisor_C2" for hierarchy "divisor_C2:inst8"
+Warning (275011): Block or symbol "NOT" of instance "inst11" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst45" overlaps another block or symbol
+Info (12128): Elaborating entity "C2" for hierarchy "divisor_C2:inst8|C2:inst20"
+Info (12128): Elaborating entity "divisor_3bits" for hierarchy "divisor_C2:inst8|divisor_3bits:inst2"
+Warning (275011): Block or symbol "GND" of instance "inst27" overlaps another block or symbol
+Info (12128): Elaborating entity "unidade_subtratora" for hierarchy "divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst16"
+Info (12128): Elaborating entity "fs" for hierarchy "divisor_C2:inst8|divisor_3bits:inst2|unidade_subtratora:inst16|fs:inst2"
+Warning (12125): Using design file sub.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: sub
+Info (12128): Elaborating entity "sub" for hierarchy "sub:inst17"
+Info (12128): Elaborating entity "adder_carry" for hierarchy "sub:inst17|adder_carry:inst"
+Info (12128): Elaborating entity "adder_c2" for hierarchy "adder_c2:inst9"
+Info (12128): Elaborating entity "ou_exclusivo" for hierarchy "ou_exclusivo:inst22"
+Info (12128): Elaborating entity "nao_ou" for hierarchy "nao_ou:inst23"
+Info (12128): Elaborating entity "nao_e" for hierarchy "nao_e:inst24"
+Info (12128): Elaborating entity "ou" for hierarchy "ou:inst25"
+Info (12128): Elaborating entity "e" for hierarchy "e:inst26"
+Info (12128): Elaborating entity "nao" for hierarchy "nao:inst27"
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:inst7"
+Info (12130): Elaborated megafunction instantiation "MUX:inst7"
+Info (12133): Instantiated megafunction "MUX:inst7" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+    Info (12134): Parameter "WIDTHS" = "4"
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:inst5"
+Info (12130): Elaborated megafunction instantiation "MUX:inst5"
+Info (12133): Instantiated megafunction "MUX:inst5" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+    Info (12134): Parameter "WIDTHS" = "4"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[3]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 104 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 75 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Thu Jun 28 16:33:15 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
+
+

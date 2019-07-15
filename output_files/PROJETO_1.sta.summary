@@ -1,0 +1,485 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'In_clock'
+Slack : -10.573
+TNS   : -100.353
+
+Type  : Slow 1100mV 85C Model Setup 'reset'
+Slack : -10.138
+TNS   : -120.726
+
+Type  : Slow 1100mV 85C Model Setup 'clk_1mhz'
+Slack : -3.105
+TNS   : -97.901
+
+Type  : Slow 1100mV 85C Model Setup 'contador_jump:inst|inst46'
+Slack : -1.945
+TNS   : -1.945
+
+Type  : Slow 1100mV 85C Model Setup 'contador_jump:inst|inst47'
+Slack : -1.065
+TNS   : -2.128
+
+Type  : Slow 1100mV 85C Model Setup 'contador_jump:inst|inst45'
+Slack : -0.938
+TNS   : -0.938
+
+Type  : Slow 1100mV 85C Model Hold 'reset'
+Slack : -5.009
+TNS   : -13.503
+
+Type  : Slow 1100mV 85C Model Hold 'In_clock'
+Slack : -4.801
+TNS   : -9.690
+
+Type  : Slow 1100mV 85C Model Hold 'clk_1mhz'
+Slack : -1.030
+TNS   : -1.030
+
+Type  : Slow 1100mV 85C Model Hold 'contador_jump:inst|inst45'
+Slack : -0.363
+TNS   : -0.363
+
+Type  : Slow 1100mV 85C Model Hold 'contador_jump:inst|inst47'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'contador_jump:inst|inst46'
+Slack : 0.524
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'reset'
+Slack : -9.761
+TNS   : -71.693
+
+Type  : Slow 1100mV 85C Model Recovery 'contador_jump:inst|inst47'
+Slack : -8.840
+TNS   : -17.676
+
+Type  : Slow 1100mV 85C Model Recovery 'contador_jump:inst|inst46'
+Slack : -8.836
+TNS   : -8.836
+
+Type  : Slow 1100mV 85C Model Recovery 'contador_jump:inst|inst45'
+Slack : -8.645
+TNS   : -8.645
+
+Type  : Slow 1100mV 85C Model Recovery 'In_clock'
+Slack : -7.119
+TNS   : -44.549
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_1mhz'
+Slack : -0.840
+TNS   : -18.110
+
+Type  : Slow 1100mV 85C Model Removal 'reset'
+Slack : -3.140
+TNS   : -17.592
+
+Type  : Slow 1100mV 85C Model Removal 'In_clock'
+Slack : -3.047
+TNS   : -16.920
+
+Type  : Slow 1100mV 85C Model Removal 'clk_1mhz'
+Slack : -0.789
+TNS   : -12.248
+
+Type  : Slow 1100mV 85C Model Removal 'contador_jump:inst|inst47'
+Slack : 2.620
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'contador_jump:inst|inst45'
+Slack : 2.686
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'contador_jump:inst|inst46'
+Slack : 2.928
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'reset'
+Slack : -2.636
+TNS   : -51.545
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'In_clock'
+Slack : -2.636
+TNS   : -46.778
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_1mhz'
+Slack : -0.538
+TNS   : -28.099
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'contador_jump:inst|inst47'
+Slack : -0.538
+TNS   : -1.633
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'contador_jump:inst|inst45'
+Slack : -0.538
+TNS   : -0.820
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'contador_jump:inst|inst46'
+Slack : -0.538
+TNS   : -0.782
+
+Type  : Slow 1100mV 0C Model Setup 'In_clock'
+Slack : -10.374
+TNS   : -98.360
+
+Type  : Slow 1100mV 0C Model Setup 'reset'
+Slack : -10.157
+TNS   : -122.071
+
+Type  : Slow 1100mV 0C Model Setup 'clk_1mhz'
+Slack : -2.940
+TNS   : -90.560
+
+Type  : Slow 1100mV 0C Model Setup 'contador_jump:inst|inst46'
+Slack : -1.996
+TNS   : -1.996
+
+Type  : Slow 1100mV 0C Model Setup 'contador_jump:inst|inst45'
+Slack : -1.016
+TNS   : -1.016
+
+Type  : Slow 1100mV 0C Model Setup 'contador_jump:inst|inst47'
+Slack : -1.004
+TNS   : -2.005
+
+Type  : Slow 1100mV 0C Model Hold 'reset'
+Slack : -4.861
+TNS   : -12.292
+
+Type  : Slow 1100mV 0C Model Hold 'In_clock'
+Slack : -4.767
+TNS   : -9.731
+
+Type  : Slow 1100mV 0C Model Hold 'clk_1mhz'
+Slack : -1.168
+TNS   : -1.168
+
+Type  : Slow 1100mV 0C Model Hold 'contador_jump:inst|inst45'
+Slack : -0.240
+TNS   : -0.240
+
+Type  : Slow 1100mV 0C Model Hold 'contador_jump:inst|inst47'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'contador_jump:inst|inst46'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'reset'
+Slack : -9.521
+TNS   : -71.856
+
+Type  : Slow 1100mV 0C Model Recovery 'contador_jump:inst|inst47'
+Slack : -8.686
+TNS   : -17.368
+
+Type  : Slow 1100mV 0C Model Recovery 'contador_jump:inst|inst46'
+Slack : -8.686
+TNS   : -8.686
+
+Type  : Slow 1100mV 0C Model Recovery 'contador_jump:inst|inst45'
+Slack : -8.463
+TNS   : -8.463
+
+Type  : Slow 1100mV 0C Model Recovery 'In_clock'
+Slack : -6.927
+TNS   : -43.707
+
+Type  : Slow 1100mV 0C Model Recovery 'clk_1mhz'
+Slack : -0.656
+TNS   : -11.758
+
+Type  : Slow 1100mV 0C Model Removal 'reset'
+Slack : -2.875
+TNS   : -16.327
+
+Type  : Slow 1100mV 0C Model Removal 'In_clock'
+Slack : -2.857
+TNS   : -16.369
+
+Type  : Slow 1100mV 0C Model Removal 'clk_1mhz'
+Slack : -0.914
+TNS   : -17.842
+
+Type  : Slow 1100mV 0C Model Removal 'contador_jump:inst|inst47'
+Slack : 2.610
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'contador_jump:inst|inst45'
+Slack : 2.655
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'contador_jump:inst|inst46'
+Slack : 2.927
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'reset'
+Slack : -2.636
+TNS   : -51.386
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'In_clock'
+Slack : -2.636
+TNS   : -46.526
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_1mhz'
+Slack : -0.538
+TNS   : -28.470
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'contador_jump:inst|inst47'
+Slack : -0.538
+TNS   : -1.609
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'contador_jump:inst|inst46'
+Slack : -0.538
+TNS   : -0.777
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'contador_jump:inst|inst45'
+Slack : -0.538
+TNS   : -0.769
+
+Type  : Fast 1100mV 85C Model Setup 'In_clock'
+Slack : -5.630
+TNS   : -53.057
+
+Type  : Fast 1100mV 85C Model Setup 'reset'
+Slack : -5.558
+TNS   : -62.660
+
+Type  : Fast 1100mV 85C Model Setup 'clk_1mhz'
+Slack : -1.581
+TNS   : -45.911
+
+Type  : Fast 1100mV 85C Model Setup 'contador_jump:inst|inst46'
+Slack : -1.028
+TNS   : -1.028
+
+Type  : Fast 1100mV 85C Model Setup 'contador_jump:inst|inst45'
+Slack : -0.328
+TNS   : -0.328
+
+Type  : Fast 1100mV 85C Model Setup 'contador_jump:inst|inst47'
+Slack : -0.134
+TNS   : -0.266
+
+Type  : Fast 1100mV 85C Model Hold 'reset'
+Slack : -2.587
+TNS   : -8.264
+
+Type  : Fast 1100mV 85C Model Hold 'In_clock'
+Slack : -2.422
+TNS   : -5.353
+
+Type  : Fast 1100mV 85C Model Hold 'clk_1mhz'
+Slack : -0.801
+TNS   : -2.242
+
+Type  : Fast 1100mV 85C Model Hold 'contador_jump:inst|inst45'
+Slack : -0.338
+TNS   : -0.338
+
+Type  : Fast 1100mV 85C Model Hold 'contador_jump:inst|inst46'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'contador_jump:inst|inst47'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'reset'
+Slack : -5.175
+TNS   : -32.562
+
+Type  : Fast 1100mV 85C Model Recovery 'contador_jump:inst|inst47'
+Slack : -4.566
+TNS   : -9.131
+
+Type  : Fast 1100mV 85C Model Recovery 'contador_jump:inst|inst46'
+Slack : -4.533
+TNS   : -4.533
+
+Type  : Fast 1100mV 85C Model Recovery 'contador_jump:inst|inst45'
+Slack : -4.371
+TNS   : -4.371
+
+Type  : Fast 1100mV 85C Model Recovery 'In_clock'
+Slack : -3.661
+TNS   : -19.662
+
+Type  : Fast 1100mV 85C Model Recovery 'clk_1mhz'
+Slack : -0.420
+TNS   : -9.251
+
+Type  : Fast 1100mV 85C Model Removal 'reset'
+Slack : -2.003
+TNS   : -12.004
+
+Type  : Fast 1100mV 85C Model Removal 'In_clock'
+Slack : -1.796
+TNS   : -10.463
+
+Type  : Fast 1100mV 85C Model Removal 'clk_1mhz'
+Slack : -0.733
+TNS   : -17.040
+
+Type  : Fast 1100mV 85C Model Removal 'contador_jump:inst|inst47'
+Slack : 1.485
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'contador_jump:inst|inst45'
+Slack : 1.516
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'contador_jump:inst|inst46'
+Slack : 1.711
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'reset'
+Slack : -2.174
+TNS   : -42.716
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'In_clock'
+Slack : -2.174
+TNS   : -37.889
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_1mhz'
+Slack : -0.096
+TNS   : -3.365
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'contador_jump:inst|inst47'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'contador_jump:inst|inst46'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'contador_jump:inst|inst45'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'In_clock'
+Slack : -5.007
+TNS   : -45.963
+
+Type  : Fast 1100mV 0C Model Setup 'reset'
+Slack : -4.957
+TNS   : -55.991
+
+Type  : Fast 1100mV 0C Model Setup 'clk_1mhz'
+Slack : -1.407
+TNS   : -40.821
+
+Type  : Fast 1100mV 0C Model Setup 'contador_jump:inst|inst46'
+Slack : -0.935
+TNS   : -0.935
+
+Type  : Fast 1100mV 0C Model Setup 'contador_jump:inst|inst45'
+Slack : -0.321
+TNS   : -0.321
+
+Type  : Fast 1100mV 0C Model Setup 'contador_jump:inst|inst47'
+Slack : -0.080
+TNS   : -0.159
+
+Type  : Fast 1100mV 0C Model Hold 'reset'
+Slack : -2.439
+TNS   : -6.921
+
+Type  : Fast 1100mV 0C Model Hold 'In_clock'
+Slack : -2.342
+TNS   : -5.124
+
+Type  : Fast 1100mV 0C Model Hold 'clk_1mhz'
+Slack : -0.796
+TNS   : -3.105
+
+Type  : Fast 1100mV 0C Model Hold 'contador_jump:inst|inst45'
+Slack : -0.314
+TNS   : -0.314
+
+Type  : Fast 1100mV 0C Model Hold 'contador_jump:inst|inst46'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'contador_jump:inst|inst47'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'reset'
+Slack : -4.601
+TNS   : -29.725
+
+Type  : Fast 1100mV 0C Model Recovery 'contador_jump:inst|inst47'
+Slack : -4.242
+TNS   : -8.484
+
+Type  : Fast 1100mV 0C Model Recovery 'contador_jump:inst|inst46'
+Slack : -4.223
+TNS   : -4.223
+
+Type  : Fast 1100mV 0C Model Recovery 'contador_jump:inst|inst45'
+Slack : -4.072
+TNS   : -4.072
+
+Type  : Fast 1100mV 0C Model Recovery 'In_clock'
+Slack : -3.222
+TNS   : -17.574
+
+Type  : Fast 1100mV 0C Model Recovery 'clk_1mhz'
+Slack : -0.362
+TNS   : -7.577
+
+Type  : Fast 1100mV 0C Model Removal 'reset'
+Slack : -1.782
+TNS   : -10.759
+
+Type  : Fast 1100mV 0C Model Removal 'In_clock'
+Slack : -1.622
+TNS   : -9.662
+
+Type  : Fast 1100mV 0C Model Removal 'clk_1mhz'
+Slack : -0.734
+TNS   : -18.163
+
+Type  : Fast 1100mV 0C Model Removal 'contador_jump:inst|inst47'
+Slack : 1.461
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'contador_jump:inst|inst45'
+Slack : 1.471
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'contador_jump:inst|inst46'
+Slack : 1.648
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'reset'
+Slack : -2.174
+TNS   : -42.135
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'In_clock'
+Slack : -2.174
+TNS   : -36.903
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_1mhz'
+Slack : -0.098
+TNS   : -3.428
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'contador_jump:inst|inst47'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'contador_jump:inst|inst46'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'contador_jump:inst|inst45'
+Slack : 0.143
+TNS   : 0.000
+
+------------------------------------------------------------

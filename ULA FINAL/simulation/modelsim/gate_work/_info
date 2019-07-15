@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/10851707/Desktop/Trabalho Final PLD/simulation/modelsim
+Eteste
+Z1 w1530214113
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 7J=f;m:z^MT15:Qc:ljT]3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 lAUg_9M0;efa7j^:Hc8T01
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ;G:cK]2a[@f]CM8o^BN@U2
+R0
+Z9 8ula.vho
+Z10 Fula.vho
+l0
+L37
+VjlHEGoE358j17l258[6HJ1
+!s100 O?D2JQj:cf=?h2`F:^`b<1
+Z11 OV;C;10.3c;59
+31
+Z12 !s110 1530214120
+!i10b 1
+Z13 !s108 1530214120.185000
+Z14 !s90 -reportprogress|300|-93|-work|work|ula.vho|
+Z15 !s107 ula.vho|
+!i113 1
+Z16 o-93 -work work
+Z17 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 teste 0 22 jlHEGoE358j17l258[6HJ1
+l109
+L63
+V4VbVn]mkUMh]eddBoUU=b0
+!s100 V;TQ0X7z@GiBUDVQoV[Rm1
+R11
+31
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17

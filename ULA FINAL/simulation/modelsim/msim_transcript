@@ -1,0 +1,57 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ula_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work gate_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {ula.vho}
+# Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 16:28:40 on Jun 28,2018
+# vcom -reportprogress 300 -93 -work work ula.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity teste
+# -- Compiling architecture structure of teste
+# End time: 16:28:40 on Jun 28,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.teste
+# vsim -gui -l msim_transcript -do "ula_run_msim_gate_vhdl.do" 
+# Start time: 16:28:43 on Jun 28,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.teste(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+sim:/teste/SW
+add wave -position insertpoint  \
+sim:/teste/MUL
+force -freeze sim:/teste/SW 01110010 0
+run
+force -freeze sim:/teste/SW 11100010 0
+run
+# End time: 16:29:42 on Jun 28,2018, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
